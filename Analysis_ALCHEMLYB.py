@@ -1365,8 +1365,8 @@ if __name__ == "__main__":
         concentration = np.exp(dG/(B*args.temperature)) / 1.0e-6
         
         print(f"Results:\n \
-            Complex leg: {results['complex'][0]:.3f} +- {results['complex'][1]:.3f}\n \
-            Solvent leg: {results['solvent'][0]:.3f} +- {results['solvent'][1]:.3f}\n \
+            Complex leg: {results['complex'][0]:.3f} +- {results['complex'][1]:.3f} kcal/mol\n \
+            Solvent leg: {results['solvent'][0]:.3f} +- {results['solvent'][1]:.3f} kcal/mol\n \
             Standard correction: {standard_correction_kT:.3f} kT; {standard_correction_kcak_mol:.3f} kcal/mol\n \
-            Final result: {dG:.2f} +- {dG_error:.2f} | {concentration:.2f}"
+            Final result: {dG:.2f} +- {dG_error:.2f} kcal/mol | {concentration:.2f} µM"
         )
